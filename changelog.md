@@ -23,3 +23,12 @@
 * Adds the /vendor/assets directory, including images and stylesheets.
   The 0.1.3 release still appears to be broken, as implementing sites get an
   error "Sprockets::Rails::Helper::AssetNotFound" for favicon.ico.
+
+## 0.1.5
+
+* This moves the link_helper content into
+  app/helpers/website/theme/link_helper.rb with a similar internal module
+  nesting. With the file at just app/helpers/link_helper.rb, the implementing
+  site generated a NoMethodError when attempting to call nav_link_to.
+* Also with this version (and perhaps before), implementing sites need to add
+  entries for the favicon and wordmark to their app/assets/config/manifest.js.
