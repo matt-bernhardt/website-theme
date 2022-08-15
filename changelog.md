@@ -11,3 +11,9 @@
   * app/helpers/link_helper.rb
   * app/views/layouts/**.html.erb
 * Tests still pass
+
+## 0.1.3
+
+* Adds sassc-rails as a dependency in gemspec
+  This was needed because implementing the 0.1.2 gem version breaks the
+  implementing site with an error "cannot load such file -- sassc".
