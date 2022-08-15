@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    website-theme (0.1.4)
+    website-theme (0.1.6)
       rails (>= 7.0.3.1)
       sassc-rails (~> 2)
 

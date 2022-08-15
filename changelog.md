@@ -32,3 +32,13 @@
   site generated a NoMethodError when attempting to call nav_link_to.
 * Also with this version (and perhaps before), implementing sites need to add
   entries for the favicon and wordmark to their app/assets/config/manifest.js.
+
+## 0.1.6
+
+* This adds some "real" tests to the gem, in the process making the dummy
+  application a bit more real as well.
+* The link_helper file is placed back at /app/helpers/link_helper.rb -
+  which allows tests to pass, but the `nav_link_to` function is still not
+  available to implementing sites. It is callable at LinkHelper::nav_link_to,
+  but the rails functions current_page? and link_to do not appear to be callable
+  from within it?
